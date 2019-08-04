@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function disp()
+        {
+            var r = confirm("请点击按钮")
+            if(r==true)
+            {
+                document.write("点击了按钮")
+            }
+            else
+            {
+                document.write("没有点击按钮")
+            }
+        }
+    </script>
+</head>
+<body>
+<p>
+    <input type="button" onabort="disp()" id="button" value="请点击我">
+</p>
+</body>
+</html>
