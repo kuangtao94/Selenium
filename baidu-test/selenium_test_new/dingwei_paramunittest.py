@@ -1,4 +1,4 @@
-import unittest_1,os,time,HTMLTestRunner,paramunittest
+import unittest,os,time,HTMLTestRunner,paramunittest
 
 # @paramunittest.parametrized(
 #     ("admin1","1234","true"),
@@ -27,7 +27,7 @@ import unittest_1,os,time,HTMLTestRunner,paramunittest
     {"user": "admin10", "psw": "1234", "result": "true"},
     {"user": "admin11", "psw": "1234", "result": "true"},
 )
-class TestDemo(unittest_1.TestCase):
+class TestDemo(unittest.TestCase):
     def setParameters(self,user,psw,result):
         self.user = user
         self.psw = psw
@@ -47,13 +47,13 @@ case_path = os.path.join(os.getcwd())
 # 报告存放路径
 report_path = os.path.join(os.getcwd())
 def all_case():
-    discover = unittest_1.defaultTestLoader.discover(case_path,
+    discover = unittest.defaultTestLoader.discover(case_path,
                                                      pattern="*.py",
                                                      top_level_dir=None)
     print(discover)
     return discover
 if __name__ == '__main__':
-    runner = unittest_1.TextTestRunner()
+    runner = unittest.TextTestRunner()
     runner.run(all_case())
 
     # # html报告文件路径

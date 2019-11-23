@@ -1,0 +1,15 @@
+student1:
+  name : '小明'
+  age : '12'
+  sex : '男'
+
+student2:
+  name : '小红'
+  age : '22'
+  sex : '女'
+
+student3:
+  name : 'Boy'
+  age : '30'
+  sex : '人妖'
+

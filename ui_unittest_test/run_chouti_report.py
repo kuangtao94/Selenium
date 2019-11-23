@@ -1,14 +1,14 @@
 import os
 import HTMLTestRunner
 import time as t
-import unittest_1
+import unittest
 from appium.webdriver.common.mobileby import MobileBy
 
 
 def allTest():
-    suite = unittest_1.defaultTestLoader.discover(
+    suite = unittest.defaultTestLoader.discover(
         start_dir=os.path.dirname(__file__),
-        pattern="test_login.py",
+        pattern="run_chouti_report.py",
         top_level_dir=None
     )
     return suite

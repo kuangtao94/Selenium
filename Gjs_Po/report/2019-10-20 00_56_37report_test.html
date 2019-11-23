@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>抽屉测试用例</title>
+    <title>Mail163自动化测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     
@@ -188,12 +188,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>抽屉测试用例</h1>
-<p class='attribute'><strong>Start Time:</strong> 2019-10-15 23:53:52</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.103005</p>
-<p class='attribute'><strong>Status:</strong> Error 1</p>
+<h1>Mail163自动化测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2019-10-20 00:56:37</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:59.172384</p>
+<p class='attribute'><strong>Status:</strong> Pass 4</p>
 
-<p class='description'>用例执行情况</p>
+<p class='description'>u"系统环境:Windows7 浏览器:Chrome 用例执行情况:"</p>
 </div>
 
 
@@ -221,51 +221,31 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
-    <td>unittest.loader._FailedTest</td>
-    <td>1</td>
+<tr class='passClass'>
+    <td>yaml_mail163.Mail_163</td>
+    <td>4</td>
+    <td>4</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_passwd_null: 验证:用户名不为空密码为空的错误信息提示</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: ImportError: Failed to import test module: test_login
-Traceback (most recent call last):
-  File "D:\Program Files\python36\lib\unittest\loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\Program Files\python36\lib\unittest\loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "D:\Test\TestCase\Selenium_test\ui_unittest_test\test_login.py", line 1, in &lt;module&gt;
-    from TestCase.Selenium_test.ui_unittest_test.Login_Test import *
-ModuleNotFoundError: No module named 'TestCase.Selenium_test.ui_unittest_test.Login_Test'
-
-ImportError: Failed to import test module: test_login
-Traceback (most recent call last):
-  File "D:\Program Files\python36\lib\unittest\loader.py", line 428, in _find_test_path
-    module = self._get_module_from_name(name)
-  File "D:\Program Files\python36\lib\unittest\loader.py", line 369, in _get_module_from_name
-    __import__(name)
-  File "D:\Test\TestCase\Selenium_test\ui_unittest_test\test_login.py", line 1, in &lt;module&gt;
-    from TestCase.Selenium_test.ui_unittest_test.Login_Test import *
-ModuleNotFoundError: No module named 'TestCase.Selenium_test.ui_unittest_test.Login_Test'
-
-
+pt1.1: 
 
         </pre>
     </div>
@@ -274,12 +254,27 @@ ModuleNotFoundError: No module named 'TestCase.Selenium_test.ui_unittest_test.Lo
     </td>
 </tr>
 
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_username_input_format: 验证:用户名输入非法字符的错误信息提示</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_username_null: 验证:用户名为空密码不为空的错误信息提示</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_username_password_null: 验证:用户名和密码为空的错误信息提示</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
+    <td>4</td>
+    <td>4</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
     <td>&nbsp;</td>
 </tr>
 </table>

@@ -1,0 +1,21 @@
+login_data:
+  url : 'https://mail.163.com/'
+
+case1:
+  user : ''
+  passwd : ''
+  errorText : '请输入帐号'
+
+case2:
+  user : 'admin'
+  passwd : ''
+  errorText : '请输入密码'
+
+case3:
+  user : ''
+  passwd : 'admin'
+
+case4:
+  user : '&&&^^^'
+  passwd : ''
+  errorText : '帐号格式错误'

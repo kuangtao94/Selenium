@@ -2,7 +2,7 @@ from selenium import webdriver
 from Selenium_test.ui_unittest_test.dingwei_excel import *
 from Selenium_test.ui_unittest_test.dingwei_ddt import *
 import time
-import unittest_1
+import unittest
 
 #测试数据
 # filename = r"D:\Test\TestCase\Selenium_test\baidu-test\excel\testdata.xlsx"
@@ -11,7 +11,7 @@ import unittest_1
 # print(excel.dict_data())
 
 @ddt.ddt
-class Bolg(unittest_1.TestCase):
+class Bolg(unittest.TestCase):
     u'''登录博客'''
     def setUp(self):
         self.driver = webdriver.Chrome()
@@ -49,6 +49,6 @@ class Bolg(unittest_1.TestCase):
         self.driver.quit()
 
 if __name__ == "__main__":
-    unittest_1.main(verbosity=2)
+    unittest.main(verbosity=2)
 
 

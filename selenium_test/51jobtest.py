@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import time as t
 from pyquery import PyQuery as pq
 import re
-from Selenium_test.selenium_test.config import  *
+from TestCase.Selenium_test.selenium_test.config import  *
 import pymongo
 
 #对MonGoDB进行实例化操作
@@ -98,6 +98,7 @@ def save_to_mongo(result):
             print("存储到MONGODB成功",result)
     except Exception:
         print("存储到MONGODB失败",result)
+
 def main():
     try:
         total = search()

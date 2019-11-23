@@ -1,5 +1,5 @@
 import ddt
-import unittest_1
+import unittest
 
 #测试数据
 testData = [{"username":"selenium","passwd":"16371821"},
@@ -7,7 +7,7 @@ testData = [{"username":"selenium","passwd":"16371821"},
             {"username":"python","passwd":"12382313"}]
 
 @ddt.ddt
-class Test(unittest_1.TestCase):
+class Test(unittest.TestCase):
     def setUp(self):
         print("start")
 
@@ -20,4 +20,4 @@ class Test(unittest_1.TestCase):
 
 
 if __name__ == '__main__':
-    unittest_1.main(verbosity=2)
+    unittest.main(verbosity=2)

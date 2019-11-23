@@ -1,5 +1,5 @@
-from Selenium_test.ui_unittest_public.Login_Test import *
-import unittest_1
+from TestCase.Selenium_test.ui_unittest_public.Login_Chouti import *
+import unittest
 import time as t
 
 class Web_login(Login):
@@ -45,4 +45,4 @@ class Web_login(Login):
         self.assertEqual(text,"1211")
 
 if __name__ == '__main__':
-    unittest_1.main(verbosity=2)
+    unittest.main(verbosity=2)

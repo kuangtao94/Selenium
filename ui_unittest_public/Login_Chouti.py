@@ -1,10 +1,11 @@
 # ###########分离简化
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
 import time as t
-import unittest_1
+import unittest
 
-class Login(unittest_1.TestCase):
+class Login(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = webdriver.Chrome()
@@ -19,7 +20,7 @@ class Login(unittest_1.TestCase):
 
 #点击页面上的登录
 def Clickbotton(driver):
-    driver.find_element_by_id("login-link-a").click()
+    driver.find_element_by_id("login_btn").click()
     t.sleep(2)
 
 
@@ -32,12 +33,12 @@ def UserName(driver,username="18797815816",passwd="qqq123"):
 
 #点击账号密码上的登录
 def Clicklogin(driver):
-    driver.find_element_by_xpath('//*[@id="footer-band"]/div[5]/div/div/div[1]/div[2]/div[4]/div[2]/div').click()
+    driver.find_element(By.CSS_SELECTOR,"button.btn-large.login-btn").click()
     t.sleep(2)
 
 #断言-->获取错误信息
 def GetErrorText(driver):
-    return driver.find_element_by_class_name("err-content").text
+    return driver.find_element(By.CSS_SELECTOR,"div.new-dialog-tips.dialog-common-warn-tips").text
 
 #断言-->获取用户信息
 def GetUserInfo(driver):

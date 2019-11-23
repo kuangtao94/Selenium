@@ -1,7 +1,7 @@
 from selenium import webdriver
-import unittest_1
+import unittest
 import time
-class Blog(unittest_1.TestCase):
+class Blog(unittest.TestCase):
     def setUp(self):
         '''登录博客'''
         self.driver = webdriver.Chrome()
@@ -45,5 +45,5 @@ class Blog(unittest_1.TestCase):
         self.driver.quit()
 
 if __name__ == '__main__':
-    unittest_1.main()
+    unittest.main()
 
